@@ -45,7 +45,7 @@ int main() {
 		
 		for (ssize_t prev = cur; prev >= begin; prev--) {
 			
-            	cstring and_the = (
+		cstring and_the = (
 				(cur >= 9) && (prev == (cur - 1) || prev == (cur - 2))
 			) ? th : a_th;
 

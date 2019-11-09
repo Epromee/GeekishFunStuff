@@ -13,10 +13,10 @@ int main() {
 	using pool = std::vector<cstring>;
 	
 	pool animals = {"chick", "hen", "cock", "turkey", "pigeon", "cat",
-		"dog", "goat", "lamb", "cow", "bull", "tractor" };
+		"dog", "goat", "lamb", "cow", "bull", "tractor"};
 		
 	pool sounds = {"CHEEP", "CO-CO", "DOODLE-DOO",
-		"GOBBLE-GOBBLE", "CRU CRU", "MEW", "WOOF", "MAH", "BAH", "MOW", "MUU", "BRUMM" };
+		"GOBBLE-GOBBLE", "CRU CRU", "MEW", "WOOF", "MAH", "BAH", "MOW", "MUU", "BRUMM"};
 		
 	std::vector<int> repetitions = {5, 4, 3, 2, 3, 2, 3, 2, 3, 4, 3, 1};
 	
@@ -33,6 +33,7 @@ int main() {
 		std::cout << little << animals[cur] << '\n';
 		
 		int begin = 0;
+
 		if (cur == 11) {
 			begin = 9;
 			sounds[0] = "...";
@@ -43,9 +44,11 @@ int main() {
 		}
 		
 		for (ssize_t prev = cur; prev >= begin; prev--) {
-			cstring and_the = (
+			
+            cstring and_the = (
 				(cur >= 9) && (prev == (cur - 1) || prev == (cur - 2))
 			) ? th : a_th;
+
 			std::cout << and_the << animals[prev] << ' ' << sounds[prev] << '\n';
 		}
 		
@@ -54,6 +57,8 @@ int main() {
 			
 		std::cout << endverse;
 	}
+
+    std::cout << "Oh oh!";
 	
 	return 0;
 }

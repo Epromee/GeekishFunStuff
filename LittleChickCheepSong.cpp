@@ -39,7 +39,7 @@ int main() {
 			sounds[0] = "...";
 			animals[9] = animals[10] = animals[11];
 			sounds[9] = sounds[10] = sounds[11];
-			endverse = "Oh oh!";
+			endverse = "Oh oh!\n";
 			delimiter = "";
 		}
 		
@@ -57,8 +57,6 @@ int main() {
 			
 		std::cout << endverse;
 	}
-
-	std::cout << "Oh oh!";
 	
 	return 0;
 }
